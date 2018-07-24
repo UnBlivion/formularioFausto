@@ -2,7 +2,7 @@ let nome = document.querySelector("#nome");
 let senha = document.querySelector("#senha");
 let email = document.querySelector("#email");
 let butao = document.querySelector("#butao");
-
+let alertafausto;
 butao.onclick = validador;
 
 function validador() {
@@ -10,17 +10,24 @@ function validador() {
     email = document.querySelector("#email").value;
     senha = document.querySelector("#senha").value;
     if (nome == "") {
-        alert("Digite um Nome");
+        document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
+        alertafausto = ("Vc Não Digitou um Nome");
+        document.querySelector("#faustalerta").innerHTML = alertafausto;
     }
     else if( email == ""){
-        alert("Digite Um E-mail");
+        document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
+        alertafausto = ("Vc Não Digitou um E-mail");
+        document.querySelector("#faustalerta").innerHTML = alertafausto;
     }
     else if(senha == ""){
-        alert("Digite Uma Senha");
+        document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
+        alertafausto = ("Vc Não Digitou uma Senha");
+        document.querySelector("#faustalerta").innerHTML = alertafausto;
     }
     else{
-        document.querySelector(".alerta").style.transform = "translateY(700px) scale(1)";
-        document.querySelector("#fausto").style.transform = "translateX(770px) scale(1)";
+        document.querySelector(".alerta").style.transform = "translateY(680px) scale(1)";
+        document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
+        document.querySelector("#faustalerta").innerHTML = alertafausto;
         document.querySelector('.global').style.transform = "translateY(-600px)";
         document.querySelector("#infonome").innerHTML = nome;
         document.querySelector("#infoemail").innerHTML = email;
