@@ -4,6 +4,8 @@ let email = document.querySelector("#email");
 let butao = document.querySelector("#butao");
 let alertafausto;
 let faustoes;
+let clapclap = new Audio('soundsfx/applause.mp3');
+let errow = new Audio('soundsfx/faustaoerrou.mp3');
 
 butao.onclick = validador;
 
@@ -17,6 +19,7 @@ function validador() {
         document.querySelector("#faustalerta").innerHTML = alertafausto;
         faustoes = "https://media1.tenor.com/images/bf08f19e6879f3728486b90b5ca586e3/tenor.gif?itemid=9658941";
         document.querySelector("#taPegandoFogoBixo").src = faustoes;
+        errow.play();
     }
     else if( email == ""){
         document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
@@ -24,6 +27,7 @@ function validador() {
         document.querySelector("#faustalerta").innerHTML = alertafausto;
         faustoes = "https://media1.tenor.com/images/e56cdf4ea8fb349207b52e5e07841c8b/tenor.gif?itemid=9324347";
         document.querySelector("#taPegandoFogoBixo").src = faustoes;
+        errow.play();
     }
     else if(senha == ""){
         document.querySelector("#fausto").style.transform = "translateX(54vw) scale(1)";
@@ -31,6 +35,7 @@ function validador() {
         document.querySelector("#faustalerta").innerHTML = alertafausto;
         faustoes = "https://media1.tenor.com/images/aee1c181892814a8352e03fd4b0e0207/tenor.gif?itemid=9324361";
         document.querySelector("#taPegandoFogoBixo").src = faustoes;
+        errow.play;
     }
 
     else if(nome == "Fausto Silva" && email == "faustao@domingao" && senha == "faustolindo"){
@@ -44,6 +49,7 @@ function validador() {
         document.querySelector("#infonome").innerHTML = nome;
         document.querySelector("#infoemail").innerHTML = email;
         document.querySelector("#infosenha").innerHTML = senha;
+        clapclap.play();
     }
     else{
         document.querySelector(".alerta").style.transform = "translateY(680px) scale(1)";
@@ -56,6 +62,7 @@ function validador() {
         document.querySelector("#infonome").innerHTML = nome;
         document.querySelector("#infoemail").innerHTML = email;
         document.querySelector("#infosenha").innerHTML = senha;
+        clapclap.play();
     }
 }
 
