@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    background-color: rgb(226, 192, 148);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.global{
+    margin-top: 20px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+}
+
+#fausto{
+    left: -200px;
+    bottom: 10px;
+    position: absolute;
+    transition: 2s;
+    transform: scale(0.1);
+    border: 5px dotted black;
+    height: auto;
+    width: 40vh;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#fausto img{
+    height: 100%;
+    width: 100%;
+}
+
+.alerta{
+    position: relative;
+    background-color: rgb(218, 203, 122);
+    top:-950px;
+    height: 150px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+    transform: scale(0.1);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 33%;
+}
+
+.info h2{
+    margin: 0;
+}
+
+.info div{
+    width: 70%;
+    height: 30%;
+    padding: 10px;
+    border-bottom: 2px solid red;
+    border-radius: 5px 5px 0 0;
+    justify-content: flex-start;
+    background-color: aliceblue;
+    right: 10px;
+}
