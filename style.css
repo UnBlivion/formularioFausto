@@ -116,7 +116,7 @@ button{
 }
 
 #faustalerta{
-    font-size: 1.3vw;
+    font-size: 1em;
     font-weight: bold;
     margin: 0 0 10px 0;
     border-bottom: solid red 2px;
